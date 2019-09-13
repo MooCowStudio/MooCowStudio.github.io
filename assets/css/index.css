@@ -1,0 +1,56 @@
+@font-face{
+	font-family: 'Bitter';
+	src: url('../fonts/Bitter-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: 'Bitter', 'Kosugi', sans-serif;
+}
+
+.header {/*親div*/
+  position: relative;/*相対配置*/
+}
+
+.header h1 {
+  position: absolute;/*絶対配置*/
+  color: black;/*文字は白に*/
+  bottom: 0;
+  right: 0;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+            -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+            0px 1px 0 #FFF,  0-1px 0 #FFF,
+            -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+.header img {
+  width: 100%;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.sns {
+  padding-top: 30px;
+}
+
+.youtube {
+  position:relative;
+  width:100%;
+  height:0;
+  padding-top:75%;
+}
+.youtube iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
